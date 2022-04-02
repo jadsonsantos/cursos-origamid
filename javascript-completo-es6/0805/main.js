@@ -13,3 +13,11 @@ function createButton(background = 'blue', color = 'red') {
 const redButton = createButton('green', 'black')
 
 document.querySelector('body').append(redButton)
+
+
+// Utilize o metodo push para inserir as frutas ao final de comidas
+const frutas = ['Banana', 'Uva', 'Morango']
+const comidas = ['Pizza', 'Batata']
+
+comidas.push(...frutas)
+console.log(comidas);
